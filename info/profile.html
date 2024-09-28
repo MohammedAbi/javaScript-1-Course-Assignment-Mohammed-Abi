@@ -1,0 +1,258 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to our e-commerce website! We specialize in selling a wide selection of high-quality rain jackets for both men and women. Browse through our collection to find the perfect rain jacket to stay stylish and protected from the elements. Explore our About page to learn more about our brand and commitment to quality and customer satisfaction."
+    />
+    <title>Profile | Rainy Days home page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/navigation.css" />
+    <link rel="stylesheet" href="./src/css/profile.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <script type="module" src="./script/common.js"></script>
+    <script src="./script/nav.js" defer></script>
+    <script src="./script/profile.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="./index.html" class="logo"
+          ><img
+            src="./assets/images/logo.png"
+            alt="Rainy Days logo for e-commerce website that sells a range of stylish and functional rain jackets for men and women."
+        /></a>
+        <ul class="navbar">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Men</a></li>
+          <li><a href="./index.html">Women</a></li>
+        </ul>
+        <ul class="navbar">
+          <li><a href="./aboutPage.html">About</a></li>
+          <li><a href="./contactPage.html">Contact</a></li>
+        </ul>
+        <ul class="sideBar">
+          <li>
+            <i class="bx bx-md bx-x" onclick="hideSideBar()"></i>
+          </li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Men</a></li>
+          <li><a href="./index.html">Women</a></li>
+          <li><a href="./aboutPage.html">About</a></li>
+          <li><a href="./contactPage.html">Contact</a></li>
+          <li><a href="./cartInfo.html">Cart</a></li>
+          <li><a href="./terms&conditions.html">Terms & conditions</a></li>
+          <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+          <li>
+            <a href="./profile.html"><i class="bx bx-md bx-user"></i></a>
+          </li>
+        </ul>
+        <div class="icons">
+          <a href="./profile.html"
+            ><i class="bx bx-md bx-user bx-user nav-user"></i
+          ></a>
+          <a href="./cartInfo.html"
+            ><i class="bx bx-md bx-shopping-bag"
+              ><span class="counter"></span
+            ></i>
+          </a>
+          <i class="bx bx-lg bx-menu" onclick="showSidebar()"></i>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div id="loginSection" class="section">
+          <h1>Login</h1>
+          <form id="loginForm">
+            <div>
+              <label for="loginEmail">Email:</label>
+              <input type="email" id="loginEmail" name="loginEmail" required />
+            </div>
+            <div>
+              <!-- Password input field -->
+              <label for="loginPassword">Password:</label>
+              <input
+                type="password"
+                id="loginPassword"
+                name="loginPassword"
+                required
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <p>
+            Don't have an account?<a href="#" id="registerLink">Register</a>
+          </p>
+        </div>
+        <div id="registerSection" class="section" style="display: none">
+          <h1>Register</h1>
+          <form id="registerForm">
+            <div>
+              <label for="registerName">Name:</label>
+              <input
+                type="text"
+                id="registerName"
+                name="registerName"
+                required
+              />
+            </div>
+            <div>
+              <label for="registerEmail">Email:</label>
+              <input
+                type="email"
+                id="registerEmail"
+                name="registerEmail"
+                required
+              />
+            </div>
+            <div>
+              <!-- Password input field -->
+              <label for="registerPassword">Password:</label>
+              <input
+                type="password"
+                id="registerPassword"
+                name="registerPassword"
+                required
+              />
+            </div>
+            <button type="submit">Register</button>
+          </form>
+          <a href="#" id="loginLink">Login</a>
+        </div>
+        <div id="profileSection" class="section" style="display: none">
+          <div id="profilePage">
+            <h1 id="welcomeMessage">Welcome to Profile Page</h1>
+            <div id="profileInfo"></div>
+            <div id="editProfileForm" style="display: none">
+              <h2>Edit Profile</h2>
+              <form id="editForm">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" min="1" />
+                </div>
+                <div>
+                  <label for="hobby">Hobby:</label>
+                  <input type="text" id="hobby" name="hobby" />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div>
+                  <label for="password">Password:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <button type="submit">Save Changes</button>
+              </form>
+            </div>
+            <button id="editProfileBtn">Edit Profile</button>
+            <button id="logoutBtn">Logout</button>
+            <!-- Add Save Profile Button -->
+            <button id="saveProfileBtn" style="display: none">
+              Save Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="footerContainer">
+        <footer class="mainFooter">
+          <div class="leftSide">
+            <a href="/">
+              <img
+                class="logoFooter"
+                src="./assets/images/logo.png"
+                alt="Rainy Days logo for e-commerce website that sells a range of stylish and functional rain jackets for men and women."
+              />
+            </a>
+            <p>- We create beauty</p>
+          </div>
+          <div class="middleSide">
+            <a href="./index.html">
+              <span>Store</span>
+            </a>
+            <a href="./index.html">
+              <p>New Season</p>
+            </a>
+            <a href="./index.html">
+              <p>Most Sold</p>
+            </a>
+          </div>
+          <div class="middleSide">
+            <a href="./aboutPage.html">
+              <span>About</span>
+            </a>
+            <a href="./contactPage.html">
+              <p>Help</p>
+            </a>
+            <a href="https://tools.usps.com/go/TrackConfirmAction_input">
+              <p>Shipping</p>
+            </a>
+          </div>
+          <div class="middleSide">
+            <a href="./aboutPage.html">
+              <span>Info</span>
+            </a>
+            <a href="./contactPage.html">
+              <p>Contact</p>
+            </a>
+            <a href="./terms&conditions.html">
+              <p>Term & Condition</p>
+            </a>
+            <a href="./privacyPolicy.html">
+              <p>Privacy Policy</p>
+            </a>
+          </div>
+          <div class="socialIconsContainer">
+            <i
+              class="bx bxl-twitter"
+              title="Get in touch with us through our Twitter page to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+            <i
+              class="bx bxl-facebook"
+              title="Get in touch with us through our Facebook page to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+            <i
+              class="bx bxl-google"
+              title="Get in touch with us through our Gmail to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+            <i
+              class="bx bxl-instagram"
+              title="Get in touch with us through our Instagram page to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+          </div>
+        </footer>
+        <div class="CopyRight">
+          <a href="">&#169; 2018. All rights reserved</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

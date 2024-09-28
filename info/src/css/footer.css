@@ -1,0 +1,198 @@
+.footerContainer {
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d2deff;
+}
+
+.mainFooter {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 100px 40px 40px 40px;
+}
+
+.leftSide {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSide img {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 69, 255, 0.1);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+.mainFooter p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.mainFooter a {
+  text-decoration: none;
+}
+
+.middleSide span {
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.middleSide p {
+  color: var(--main-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.socialIconsContainer {
+  display: inline-block;
+  background-color: transparent;
+  width: 250px;
+}
+
+.socialIconsContainer i {
+  margin-right: 16px;
+  color: var(--bg-color);
+  font-size: 24px;
+}
+
+.CopyRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CopyRight a {
+  color: var(--main-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+/* Desktop container utility class: */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+    .socialIconsContainer {
+      display: none;
+    }
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+    .logoFooter {
+      display: none;
+    }
+    .leftSide {
+      display: none;
+    }
+    mainfooter p {
+      display: none;
+    }
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+    .mainFooter p {
+      display: none;
+    }
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Need to get in touch with us about our e-commerce website that sells a wide range of men's and women's rain jackets? Visit our contact page to reach out to us for any inquiries, feedback, or concerns regarding our products and services."
+    />
+    <title>Contact | Rainy Days home page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/navigation.css" />
+    <link rel="stylesheet" href="./src/css/contactPage.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <script type="module" src="./script/common.js"></script>
+    <script src="./script/nav.js" defer></script>
+    <script src="./script/contact.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <a href="./index.html" class="logo"
+          ><img
+            src="./assets/images/logo.png"
+            alt="Rainy Days logo for e-commerce website that sells a range of stylish and functional rain jackets for men and women."
+        /></a>
+        <ul class="navbar">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Men</a></li>
+          <li><a href="./index.html">Women</a></li>
+        </ul>
+        <ul class="navbar">
+          <li><a href="./aboutPage.html">About</a></li>
+          <li><a href="./contactPage.html">Contact</a></li>
+        </ul>
+        <ul class="sideBar">
+          <li>
+            <i class="bx bx-md bx-x" onclick="hideSideBar()"></i>
+          </li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Men</a></li>
+          <li><a href="./index.html">Women</a></li>
+          <li><a href="./aboutPage.html">About</a></li>
+          <li><a href="./contactPage.html">Contact</a></li>
+          <li><a href="./cartInfo.html">Cart</a></li>
+          <li><a href="./terms&conditions.html">Terms & conditions</a></li>
+          <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+          <li>
+            <a href="./profile.html"><i class="bx bx-md bx-user"></i></a>
+          </li>
+        </ul>
+        <div class="icons">
+          <a href="./profile.html"
+            ><i class="bx bx-md bx-user bx-user nav-user"></i
+          ></a>
+          <a href="./cartInfo.html"
+            ><i class="bx bx-md bx-shopping-bag"
+              ><span class="counter"></span
+            ></i>
+          </a>
+          <i class="bx bx-lg bx-menu" onclick="showSidebar()"></i>
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="inputContainer">
+          <h1>Contacts</h1>
+          <form id="contactForm">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your name"
+            />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Your message"
+            ></textarea>
+            <input type="submit" value="Send" />
+            <div id="customAlert" class="alert" style="display: none">
+              Your message has been received. You will hear from us soon.
+              <button id="okButton" class="ok-button">OK</button>
+            </div>
+            <div id="emailAlert" class="alert" style="display: none">
+              Please enter a valid email address.
+              <button id="emailAlertOkButton" class="ok-button">OK</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="footerContainer">
+        <footer class="mainFooter">
+          <div class="leftSide">
+            <a href="/">
+              <img
+                class="logoFooter"
+                src="./assets/images/logo.png"
+                alt="Rainy Days logo for e-commerce website that sells a range of stylish and functional rain jackets for men and women."
+              />
+            </a>
+            <p>- We create beauty</p>
+          </div>
+          <div class="middleSide">
+            <a href="./index.html">
+              <span>Store</span>
+            </a>
+            <a href="./index.html">
+              <p>New Season</p>
+            </a>
+            <a href="./index.html">
+              <p>Most Sold</p>
+            </a>
+          </div>
+          <div class="middleSide">
+            <a href="./aboutPage.html">
+              <span>About</span>
+            </a>
+            <a href="./contactPage.html">
+              <p>Help</p>
+            </a>
+            <a href="https://tools.usps.com/go/TrackConfirmAction_input">
+              <p>Shipping</p>
+            </a>
+          </div>
+          <div class="middleSide">
+            <a href="./aboutPage.html">
+              <span>Info</span>
+            </a>
+            <a href="./contactPage.html">
+              <p>Contact</p>
+            </a>
+            <a href="./terms&conditions.html">
+              <p>Term & Condition</p>
+            </a>
+            <a href="./privacyPolicy.html">
+              <p>Privacy Policy</p>
+            </a>
+          </div>
+          <div class="socialIconsContainer">
+            <i
+              class="bx bxl-twitter"
+              title="Get in touch with us through our Twitter page to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+            <i
+              class="bx bxl-facebook"
+              title="Get in touch with us through our Facebook page to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+            <i
+              class="bx bxl-google"
+              title="Get in touch with us through our Gmail to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+            <i
+              class="bx bxl-instagram"
+              title="Get in touch with us through our Instagram page to explore our e-commerce website that sells men and women rain jackets. Stay updated with our latest offerings and connect with us for any queries or assistance."
+            ></i>
+          </div>
+        </footer>
+        <div class="CopyRight">
+          <a href="">&#169; 2018. All rights reserved</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

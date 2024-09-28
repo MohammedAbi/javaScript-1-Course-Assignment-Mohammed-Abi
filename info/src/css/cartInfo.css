@@ -1,0 +1,449 @@
+/* 
+<!---------------------------------- Start cartInfo ----------------------------------------------->
+ */
+.container .cartInfo {
+  display: block;
+  width: 100%;
+}
+
+.container .cartInfo .cartStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 174px;
+}
+.cartStatus .cartStatusIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 158px;
+  height: 48px;
+  color: var(--main-color);
+  font-size: 16px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 24px;
+  border: 0.5px solid #dbdee7;
+}
+
+.cartStatusIndicator:first-child {
+  background-color: var(--bg-color);
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+  color: var(--text-color);
+}
+.cartStatusIndicator:nth-child(4) {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.cartInfo h1 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 46px;
+  font-style: var(--font-style);
+  font-weight: 900;
+  line-height: 64px;
+  margin-bottom: 66px;
+}
+.cartInfo h4 {
+  /* Add your styles here */
+  color: var(--main-color);
+  font-size: 36px;
+  text-align: center;
+  padding: 40px;
+}
+
+.tableContainer {
+  width: 100%;
+}
+
+.tableContainer table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: flex;
+  white-space: wrap;
+}
+
+.tableContainer table thead {
+  color: var(--main-color);
+  font-size: 16px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.tableContainer table thead td {
+  border-bottom: 1px solid #dbdee7;
+  padding-bottom: 16px;
+}
+
+.productImage {
+  display: flex;
+  max-width: 150px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage img {
+  width: 100%;
+}
+
+.tableContainer table td h3 {
+  color: var(--main-color);
+  font-size: 20px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.tableContainer table td p {
+  color: var(--main-color);
+  font-size: 16px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 24px;
+}
+.tableContainer table tbody td input {
+  max-width: 50px;
+  padding-left: 1px;
+  border: 1px solid #dbdee7;
+}
+
+.tableContainer table td {
+  padding: 20px;
+  text-align: start;
+  border-bottom: 1px solid #dbdee7;
+}
+
+.productSize,
+.productPrice {
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.productColor {
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.tableContainer table tbody td input {
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+.deleteItem {
+  display: flex;
+  width: 100%;
+  color: var(--bg-color);
+}
+
+.cartTotal {
+  position: relative;
+  display: block;
+}
+.totalPrice {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.totalPrice h3 {
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 32px;
+  margin-right: 20px;
+}
+.totalPrice p {
+  color: var(--main-color);
+  text-align: right;
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 32px;
+}
+.ctaCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 37px;
+  margin-bottom: 113px;
+}
+.ctaCart p a {
+  display: inline-flex;
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 32px;
+  align-items: center;
+}
+.ctaCart p a i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.ctaCart .submitButton,
+#submitButton {
+  margin-right: 20px;
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  width: 214px;
+  height: 60px;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 20px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 34px;
+  border: none;
+}
+.submitButton:hover,
+#submitButton:hover {
+  background-color: #45a049;
+}
+
+#submitButton[disabled] {
+  background-color: grey;
+}
+.deleteItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: 0.1rem solid var(--bg-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.deleteItem:hover {
+  background-color: red;
+}
+
+.empty-cart-message {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-style: var(--font-style);
+  font-weight: 900;
+  line-height: 64px;
+  margin-bottom: 66px;
+}
+
+.loader {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* 
+<!---------------------------------- End cartInfo ----------------------------------------------->
+ */
+
+/* 
+<!---------------------------------- Start media query ----------------------------------------------->
+ */
+/* Desktop container utility class: */
+/* xl */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+    .cartStatusIndicator:nth-child(2),
+    .cartStatusIndicator:nth-child(3),
+    .cartStatusIndicator:nth-child(4) {
+      display: none;
+    }
+    .cartStatusIndicator:nth-child(1) {
+      border-radius: 6px 6px 6px 6px;
+      min-width: 200px;
+      margin: auto;
+    }
+    .cartInfo .cartStatus {
+      padding: 75px;
+    }
+
+    .tableContainer table td h3 {
+      color: var(--main-color);
+      font-size: 14px;
+      font-style: var(--font-style);
+      font-weight: 700;
+      line-height: 34px;
+    }
+    .tableContainer table td p {
+      display: none;
+    }
+    thead td {
+      padding: 10px;
+    }
+    tbody td {
+      padding: 10px;
+    }
+    .tableContainer table tbody td input {
+      max-width: 20px;
+      padding-left: 1px;
+      border: 1px solid #dbdee7;
+      font-size: 10px;
+    }
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+    .productImage {
+      display: none;
+    }
+    .tableContainer table thead tr td:nth-child(1) {
+      display: none;
+    }
+    .tableContainer table tbody tr td:nth-child(1) {
+      display: none;
+    }
+
+    .tableContainer table thead {
+      font-size: 12px;
+    }
+    .tableContainer table tbody td {
+      font-size: 12px;
+    }
+    .tableContainer table td h3 {
+      font-size: 12px;
+      line-height: 28px;
+    }
+
+    .submitButton {
+      margin: 0 5px;
+      width: 100%;
+      font-size: 16px;
+    }
+    .ctaCart p a {
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+    .ctaCart {
+      display: inline-block;
+      padding: 20px;
+    }
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/* 
+<!---------------------------------- End media query ----------------------------------------------->
+ */

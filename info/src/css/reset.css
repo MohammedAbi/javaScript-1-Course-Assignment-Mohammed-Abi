@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #0045ff;
+  --text-color: #ffffff;
+  --main-color: #000;
+  --font-style: normal;
+  --active-color: #ff4500;
+}
+
+body {
+  color: var(--text-color);
+  padding-top: 110px;
+}

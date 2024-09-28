@@ -1,0 +1,221 @@
+/*
+    <!---------------------------------- Start contact ----------------------------------------------->
+ */
+.container .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+}
+.container .wrapper .inputContainer {
+  display: block;
+  max-width: 556px;
+  padding: 20px;
+}
+.wrapper .inputContainer h1 {
+  color: var(--main-color);
+  font-size: 36px;
+  font-style: var(--font-style);
+  font-weight: 900;
+  line-height: 52px;
+  margin-bottom: 48px;
+}
+
+.wrapper .inputContainer form label {
+  display: none;
+}
+
+.wrapper .inputContainer input[type="text"],
+.wrapper .inputContainer textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dbdee7;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 24px;
+  resize: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--main-color);
+}
+.wrapper .inputContainer textarea {
+  margin-bottom: 48px;
+  height: 200px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--main-color);
+}
+
+.wrapper .inputContainer input[type="submit"] {
+  background-color: var(--bg-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 20px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 144px;
+}
+
+.wrapper .inputContainer input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Container for the form and alert */
+.inputContainer {
+  position: relative;
+}
+
+/* Custom alert message style */
+.alert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style for the OK button */
+.ok-button,
+.emailAlertOkButton {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Style for the OK button on hover */
+.ok-button:hover,
+.emailAlertOkButton {
+  background-color: #45a049;
+}
+
+/*
+    <!---------------------------------- End contact ----------------------------------------------->
+ */
+
+/*
+    <!---------------------------------- Start media query ----------------------------------------------->
+ */
+/* Desktop container utility class: */
+/* xl */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/*
+    <!---------------------------------- End media query ----------------------------------------------->
+ */

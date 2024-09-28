@@ -1,0 +1,227 @@
+/* 
+<!---------------------------------- Start success -----------------------------------------------> 
+*/
+.cartInfo {
+  display: block;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding: 174px 174px 60px 174px;
+}
+.cartstatusIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 158px;
+  height: 48px;
+  color: var(--main-color);
+  font-size: 16px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 24px;
+  border: 0.5px solid #dbdee7;
+}
+.cartstatusIndicator:nth-child(1) {
+  border-radius: 6px 0px 0px 6px;
+}
+.cartstatusIndicator:nth-child(4) {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.cartstatusIndicator:nth-child(4) {
+  background-color: var(--bg-color);
+  border: none;
+  color: var(--text-color);
+}
+
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 34px;
+}
+
+.paymentDetails h1 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 46px;
+  font-style: var(--font-style);
+  font-weight: 900;
+  line-height: 64px;
+  margin-bottom: 50px;
+}
+
+.paymentDetails p {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.delivery {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.ctaCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 37px;
+  margin-bottom: 113px;
+}
+
+.ctaCart .submitButton {
+  border-radius: 6px;
+  width: 293px;
+  height: 60px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 20px;
+  font-style: var(--font-style);
+  font-weight: 700;
+  line-height: 34px;
+  border: none;
+}
+.ctaCart .submitButton:hover {
+  background-color: #45a049;
+}
+/* 
+<!---------------------------------- Start success -----------------------------------------------> 
+ */
+
+/* 
+<!---------------------------------- Start media query -----------------------------------------------> 
+ */
+/* Desktop container utility class: */
+/* xl */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+    .cartstatusIndicator:nth-child(1),
+    .cartstatusIndicator:nth-child(2),
+    .cartstatusIndicator:nth-child(3) {
+      display: none;
+    }
+    .cartstatusIndicator:nth-child(4) {
+      border-radius: 6px 6px 6px 6px;
+      margin: 0 auto;
+      min-width: 200px;
+    }
+    .cartInfo .cartStatus {
+      padding: 75px;
+    }
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+    .ctaCart .submitButton {
+      margin-top: -60px auto;
+    }
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/* 
+<!---------------------------------- End media query -----------------------------------------------> 
+ */

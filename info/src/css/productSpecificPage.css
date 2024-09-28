@@ -1,0 +1,332 @@
+/*
+    <!---------------------------------- Start product specific ----------------------------------------------->
+*/
+.container .shop h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 64px;
+  padding: 280px 0 50px;
+  margin-bottom: 110px;
+  background-image: linear-gradient(
+      rgba(0, 69, 255, 0.5),
+      rgba(0, 69, 255, 0.5)
+    ),
+    url(../..//assets/images/BG2.png);
+  background-size: cover;
+  background-position: top center;
+}
+.container .shop .collectionItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1280px));
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .shop .box {
+  padding: 0 10px 10px 10px;
+  background-color: transparent;
+  box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.35s ease;
+  padding-top: 2rem;
+}
+
+.container .shop .box img {
+  width: 50%;
+  height: auto;
+}
+.container .shop .box h4 {
+  color: var(--main-color);
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.container .shop .box h5 {
+  color: var(--main-color);
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.container .shop .box .cart i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 32px;
+  margin: 15px 0 0 15px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .shop .box:hover {
+  transform: translateY(-10px);
+}
+
+.container .shop .box .productDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.container .shop .collectionItems .box .productDescription p {
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.container .shop .collectionItems .box .header {
+  background-color: var(--text-color);
+  display: flex;
+  align-items: baseline;
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container h3 {
+  display: inline-block;
+  color: var(--main-color);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+select {
+  outline: none;
+  background-color: var(--text-color);
+  border: 1px solid #dbdee7;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 14px 44px;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+select:placeholder-shown + label {
+  display: block;
+  color: var(--main-color);
+}
+
+.addToCart {
+  width: 80%;
+  height: 60px;
+  border-radius: 6px;
+  background: #0045ff;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  border: none;
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+.addToCart i {
+  margin-left: 20px;
+}
+.addToCart:hover {
+  background-color: #45a049;
+}
+
+.loader {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+#shop {
+  position: relative;
+}
+/* Custom alert message style */
+.alert {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style for the OK button */
+.ok-button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Style for the OK button on hover */
+.ok-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*
+    <!---------------------------------- End product specific ----------------------------------------------->
+*/
+
+/*
+    <!---------------------------------- Start media query ----------------------------------------------->
+*/
+/* Desktop container utility class: */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  select {
+    font-size: 14px;
+    padding: 12px 16px;
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  label {
+    visibility: hidden;
+  }
+  .container h3 {
+    font-size: 24px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+    .shop h1 {
+      font-size: 36px;
+      padding: 80px 0 50px;
+    }
+
+    .box h4 {
+      color: var(--main-color);
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .box h5 {
+      color: var(--main-color);
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .header {
+      padding-top: 1rem;
+      padding-bottom: 10rem;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 40%;
+      margin: 0 auto;
+    }
+    .addToCart {
+      width: 100%;
+    }
+  }
+}

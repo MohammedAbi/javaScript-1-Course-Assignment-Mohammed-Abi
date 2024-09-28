@@ -1,0 +1,211 @@
+/*
+  <!---------------------------------- Start about ----------------------------------------------->
+*/
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+h1,
+h2 {
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+p {
+  color: var(--main-color);
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: var(--bg-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none !important;
+  color: #4caf50;
+  margin-left: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#profileInfo {
+  margin-top: 20px;
+}
+
+#editProfileForm {
+  margin-top: 20px;
+}
+
+#editProfileForm label {
+  margin-bottom: 5px;
+}
+
+#editProfileForm textarea {
+  width: 100%;
+}
+
+#logoutBtn {
+  margin: 10px 0 10px;
+}
+
+/*
+  <!---------------------------------- End about ----------------------------------------------->
+*/
+
+/*
+  <!---------------------------------- Start media query ----------------------------------------------->
+*/
+/* Desktop container utility class: */
+/* xl */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    .nav-user {
+      display: none !important;
+    }
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/*
+  <!---------------------------------- End media query ----------------------------------------------->
+*/

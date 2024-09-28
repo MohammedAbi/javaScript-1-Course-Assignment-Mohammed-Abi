@@ -1,0 +1,147 @@
+/*
+  <!---------------------------------- Start about ----------------------------------------------->
+*/
+.container .wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.container .wrapper .content {
+  display: block;
+  padding-bottom: 3rem;
+}
+/* Existing CSS styles */
+
+.wrapper .content h1 {
+  color: var(--main-color);
+  font-family: "Inter";
+  text-align: center; /* Center align the text */
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 64px;
+}
+
+.wrapper .content p {
+  color: var(--main-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0px 20px;
+}
+.wrapper .content p span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+/*
+  <!---------------------------------- End about ----------------------------------------------->
+*/
+
+/*
+  <!---------------------------------- Start media query ----------------------------------------------->
+*/
+/* Desktop container utility class: */
+/* xl */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/*
+  <!---------------------------------- End media query ----------------------------------------------->
+*/

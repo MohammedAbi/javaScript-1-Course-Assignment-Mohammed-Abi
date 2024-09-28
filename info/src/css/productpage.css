@@ -1,0 +1,252 @@
+/*
+    <!---------------------------------- Start product ----------------------------------------------->
+*/
+.container .shop h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 64px;
+  padding: 280px 0 50px;
+  margin-bottom: 110px;
+  background-image: linear-gradient(
+      rgba(0, 69, 255, 0.5),
+      rgba(0, 69, 255, 0.5)
+    ),
+    url(../../assets/images/BG2.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.container .shop .collectionItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 110px;
+}
+
+.shop .collectionItems .box {
+  padding: 0 20px 10px 10px;
+  background-color: transparent;
+  box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.35s ease;
+  padding-top: 2rem;
+}
+
+.shop .collectionItems .box img {
+  width: 50%;
+  height: auto;
+}
+.shop .collectionItems .box h4 {
+  color: var(--main-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.shop .collectionItems .box h5 {
+  color: var(--main-color);
+  font-size: 14px;
+  letter-spacing: px;
+  margin-bottom: 20px;
+}
+.shop .collectionItems .box .cart i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 32px;
+  margin: 15px 0 0 15px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .shop .collectionItems .box:hover {
+  transform: translateY(-5px);
+} */
+
+#filterContainer {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: var(--bg-color);
+  opacity: 0.8;
+  padding-bottom: 1rem;
+}
+#filterContainer h4 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  display: block;
+  padding: 1rem;
+}
+
+#filterContainer input[type="radio"] {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#filterContainer label {
+  display: inline-block;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.loader {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+    <!---------------------------------- Start End ----------------------------------------------->
+*/
+
+/*
+    <!---------------------------------- Start mediaquery ----------------------------------------------->
+*/
+/* Desktop container utility class: */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+    .shop h1 {
+      font-size: 36px;
+      padding: 80px 0 50px;
+    }
+  }
+}
+
+/* Mobile container utility class: */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+/*
+    <!---------------------------------- End mediaquery ----------------------------------------------->
+*/
