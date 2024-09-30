@@ -86,7 +86,7 @@ To get a copy of this project up and running on your local machine, follow these
 3. Navigate to the Project Directory: Change into the project directory.
 
    ```bash
-   cd javaScript-1-Course-Assignment-Mohammed-Abi
+   cd javaScript-1-Course-Assignment-Mohammed-Abi/info
 
    ```
 
