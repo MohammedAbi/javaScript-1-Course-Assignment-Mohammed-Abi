@@ -97,6 +97,7 @@ To get a copy of this project up and running on your local machine, follow these
 ## Links
 
 - [Website deployed via Netlify](https://js-1-course-assignment-mohammedabi.netlify.app)
+- [GitHub repo](https://github.com/MohammedAbi/javaScript-1-Course-Assignment-Mohammed-Abi)
 
 ## Contact
 
